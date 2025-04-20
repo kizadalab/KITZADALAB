@@ -8,6 +8,10 @@ import { Instagram, ArrowDown } from "lucide-react";
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
 
+  const handleDownloadNow = () => {
+    window.location.href = 'https://pay.cakto.com.br/35payx6_345747';
+  };
+
   return (
     <div className="min-h-screen lab-gradient-bg text-white overflow-x-hidden">
       {/* Hero Section */}
@@ -32,7 +36,10 @@ export default function Index() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale">
+            <button 
+              onClick={handleDownloadNow}
+              className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale"
+            >
               🔊 Baixar Agora
             </button>
             <button className="px-8 py-4 rounded-md border-2 border-white border-opacity-20 hover:border-opacity-50 text-white font-bold text-lg button-glow hover-scale">
