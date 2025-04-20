@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { AudioPlayer } from "../components/AudioPlayer";
 import { PricingCard } from "../components/PricingCard";
@@ -28,16 +27,16 @@ export default function Index() {
           </h1>
           
           <p className="text-xl sm:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-            🚀 Premium Trap Beats Built for Modern Creators<br />
-            🎧 WAVs + STEMS | FLPs | Royalty-Free | Industry-Grade
+            🚀 Beats de Trap Premium Criados para Produtores Modernos<br />
+            🎧 WAVs + STEMS | FLPs | Livre de Royalties | Qualidade Profissional
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale">
-              🔊 Download Now
+              🔊 Baixar Agora
             </button>
             <button className="px-8 py-4 rounded-md border-2 border-white border-opacity-20 hover:border-opacity-50 text-white font-bold text-lg button-glow hover-scale">
-              🎧 Listen Preview
+              🎧 Ouvir Preview
             </button>
           </div>
         </div>
@@ -52,44 +51,44 @@ export default function Index() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="neon-text">Inside</span> the Lab Pack
+            <span className="neon-text">Conteúdo</span> do Pacote
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">✅</div>
-              <h3 className="text-xl font-bold mb-2">25 Studio-Grade Trap Beats</h3>
-              <p className="text-gray-400">Premium quality beat compositions ready for your vocals.</p>
+              <h3 className="text-xl font-bold mb-2">25 Beats de Trap Profissionais</h3>
+              <p className="text-gray-400">Composições de alta qualidade prontas para seus vocais.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">🎚️</div>
-              <h3 className="text-xl font-bold mb-2">High-Quality WAVs + STEMS</h3>
-              <p className="text-gray-400">Individual track elements for complete customization.</p>
+              <h3 className="text-xl font-bold mb-2">WAVs + STEMS em Alta Qualidade</h3>
+              <p className="text-gray-400">Elementos individuais para personalização completa.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">🔁</div>
-              <h3 className="text-xl font-bold mb-2">Loop Ready for Drag & Drop</h3>
-              <p className="text-gray-400">Perfectly timed loops for seamless integration.</p>
+              <h3 className="text-xl font-bold mb-2">Loops Prontos para Usar</h3>
+              <p className="text-gray-400">Loops perfeitamente sincronizados para integração fácil.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">🧪</div>
-              <h3 className="text-xl font-bold mb-2">FL Studio Project Files</h3>
-              <p className="text-gray-400">Complete FLP files to customize every aspect.</p>
+              <h3 className="text-xl font-bold mb-2">Projetos do FL Studio</h3>
+              <p className="text-gray-400">Arquivos FLP completos para personalizar cada aspecto.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">📜</div>
-              <h3 className="text-xl font-bold mb-2">Commercial Royalty-Free License</h3>
-              <p className="text-gray-400">Use in commercial projects without recurring fees.</p>
+              <h3 className="text-xl font-bold mb-2">Licença Comercial Sem Royalties</h3>
+              <p className="text-gray-400">Use em projetos comerciais sem taxas recorrentes.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale bg-gradient-to-br from-dark-navy to-[#1a1a2e]">
               <div className="text-lab-green text-2xl mb-4">🧬</div>
-              <h3 className="text-xl font-bold mb-2">Created with Precision</h3>
-              <p className="text-gray-400">Using MPC, Ableton, and analog mastering for perfect sound.</p>
+              <h3 className="text-xl font-bold mb-2">Criado com Precisão</h3>
+              <p className="text-gray-400">Usando MPC, Ableton e masterização analógica para som perfeito.</p>
             </div>
           </div>
         </div>
@@ -99,7 +98,7 @@ export default function Index() {
       <section className="py-20 px-4 bg-dark-navy bg-opacity-60">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="neon-text">Audio</span> & Visual Preview
+            <span className="neon-text">Áudio</span> & Preview Visual
           </h2>
           
           <div className="mb-10">
@@ -136,7 +135,6 @@ export default function Index() {
               </button>
             </div>
             
-            {/* For demo purposes, we'll use placeholder for the audio sources */}
             {activeTab === 1 && <AudioPlayer audioSrc="/trap-anthem.mp3" title="Trap Anthem (20 sec preview)" />}
             {activeTab === 2 && <AudioPlayer audioSrc="/808-cosmos.mp3" title="808 Cosmos (20 sec preview)" />}
             {activeTab === 3 && <AudioPlayer audioSrc="/neon-drill.mp3" title="Neon Drill (20 sec preview)" />}
@@ -146,7 +144,7 @@ export default function Index() {
           
           <div className="text-center">
             <button className="px-6 py-3 rounded-md bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition-all duration-300">
-              View All Previews
+              Ver Todos os Previews
             </button>
           </div>
         </div>
@@ -156,65 +154,65 @@ export default function Index() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">
-            <span className="neon-text">Choose</span> Your Beat Pack
+            <span className="neon-text">Escolha</span> Seu Pacote de Beats
           </h2>
           
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-            Select the package that fits your production needs. All packs include high-quality files ready for your next hit.
+            Selecione o pacote que atende às suas necessidades de produção. Todos os pacotes incluem arquivos de alta qualidade prontos para seu próximo hit.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <PricingCard 
-              title="Starter Pack"
+              title="Pacote Iniciante"
               price="29"
               features={[
-                "10 WAV Beats",
-                "Basic License",
-                "Limited commercial use",
-                "Email support"
+                "10 Beats em WAV",
+                "Licença Básica",
+                "Uso comercial limitado",
+                "Suporte por email"
               ]}
-              ctaText="Get Started"
+              ctaText="Começar Agora"
             />
             
             <PricingCard 
-              title="Creator Bundle"
+              title="Pacote Criador"
               price="59"
               features={[
-                "All 25 WAV Beats",
-                "STEMS included",
-                "FLP Project Files",
-                "Pro License",
-                "Unlimited commercial use",
-                "Priority support"
+                "Todos os 25 Beats em WAV",
+                "STEMS incluídos",
+                "Arquivos de Projeto FLP",
+                "Licença Pro",
+                "Uso comercial ilimitado",
+                "Suporte prioritário"
               ]}
               isPopular={true}
-              ctaText="Best Value"
+              ctaText="Melhor Valor"
             />
             
             <PricingCard 
-              title="Ultimate Lab Kit"
+              title="Kit Lab Ultimate"
               price="99"
               features={[
-                "Everything in Creator Bundle",
-                "Lifetime updates",
-                "Exclusive bonus content",
-                "1-on-1 producer consultation",
-                "Custom beat request",
-                "VIP support"
+                "Tudo do Pacote Criador",
+                "Atualizações vitalícias",
+                "Conteúdo bônus exclusivo",
+                "Consultoria 1-a-1 com produtor",
+                "Pedido de beat personalizado",
+                "Suporte VIP"
               ]}
-              ctaText="Go Ultimate"
+              ctaText="Quero o Ultimate"
             />
           </div>
           
           <div className="mt-12 text-center">
             <div className="inline-block glass-effect rounded-lg py-3 px-6 border border-neon-blue">
-              <p className="text-neon-blue font-bold">🎁 First 100 downloads receive 3 unreleased bonus beats!</p>
+              <p className="text-neon-blue font-bold">🎁 Primeiros 100 downloads recebem 3 beats bônus inéditos!</p>
             </div>
             
             <div className="mt-4 text-xl">
-              <span className="text-white">Use code </span>
+              <span className="text-white">Use o código </span>
               <span className="font-mono font-bold text-lab-green">TRAP25</span>
-              <span className="text-white"> at checkout for 25% off</span>
+              <span className="text-white"> no checkout para 25% de desconto</span>
             </div>
           </div>
         </div>
@@ -224,22 +222,22 @@ export default function Index() {
       <section className="py-20 px-4 bg-dark-navy bg-opacity-60">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="neon-text">What</span> Producers Are Saying
+            <span className="neon-text">O que</span> os Produtores Dizem
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TestimonialCard 
-              quote="Beats hit different. My track landed on 3 playlists in a week."
+              quote="Os beats são diferentes. Minha faixa entrou em 3 playlists em uma semana."
               author="@808VYBE"
             />
             
             <TestimonialCard 
-              quote="Best investment I've made as an indie artist."
+              quote="Melhor investimento que fiz como artista independente."
               author="@RaeOnTheTrack"
             />
             
             <TestimonialCard 
-              quote="KITZADALAB understands the sound of now. Everything slaps."
+              quote="KITZADALAB entende o som atual. Tudo é pesado."
               author="@YoungStatic"
             />
           </div>
@@ -250,12 +248,12 @@ export default function Index() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
-            <span className="neon-text">Sound</span> Designed for the Future
+            <span className="neon-text">Som</span> Projetado para o Futuro
           </h2>
           
           <p className="text-gray-300 text-lg mb-8 max-w-3xl mx-auto">
-            KITZADALAB is a sonic lab dedicated to pushing the boundaries of Trap, Drill, and hybrid production. 
-            With roots in science and sound design, every beat is engineered with purpose.
+            KITZADALAB é um laboratório sonoro dedicado a expandir as fronteiras da produção de Trap, Drill e híbridos. 
+            Com raízes na ciência e design de som, cada beat é engenheirado com propósito.
           </p>
           
           <div className="flex items-center justify-center gap-4 mb-10">
@@ -278,21 +276,21 @@ export default function Index() {
       <section className="py-20 px-4 bg-gradient-to-r from-dark-navy to-[#1a1a2e]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
-            <span className="neon-text">Stay</span> Connected
+            <span className="neon-text">Fique</span> Conectado
           </h2>
           
           <p className="text-gray-300 text-lg mb-8">
-            👉 Join the LAB newsletter for exclusive drops, samples & beat challenges
+            👉 Entre na newsletter do LAB para drops exclusivos, samples e desafios de produção
           </p>
           
           <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
             <input 
               type="email" 
-              placeholder="Your email address" 
+              placeholder="Seu endereço de email" 
               className="flex-1 px-4 py-3 bg-white bg-opacity-10 rounded-md border border-white border-opacity-20 focus:outline-none focus:border-neon-blue"
             />
             <button className="px-6 py-3 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold">
-              Subscribe
+              Inscrever
             </button>
           </div>
         </div>
@@ -305,16 +303,16 @@ export default function Index() {
             <div className="font-bold text-2xl neon-text glow mb-6 md:mb-0">KITZADALAB</div>
             
             <div className="flex gap-8">
-              <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white">Terms & Conditions</a>
-              <a href="#" className="text-gray-400 hover:text-white">Licensing Info</a>
-              <a href="#" className="text-gray-400 hover:text-white">Support / Contact</a>
+              <a href="#" className="text-gray-400 hover:text-white">Política de Privacidade</a>
+              <a href="#" className="text-gray-400 hover:text-white">Termos e Condições</a>
+              <a href="#" className="text-gray-400 hover:text-white">Info de Licenciamento</a>
+              <a href="#" className="text-gray-400 hover:text-white">Suporte / Contato</a>
             </div>
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center border-t border-white border-opacity-10 pt-8">
             <div className="text-gray-400 mb-4 md:mb-0">
-              © 2025 KITZADALAB — All rights reserved.
+              © 2025 KITZADALAB — Todos os direitos reservados.
             </div>
             
             <div className="flex items-center gap-4">
