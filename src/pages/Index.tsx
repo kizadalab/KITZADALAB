@@ -26,7 +26,7 @@ export default function Index() {
             <span className="neon-text glow">TRAPZADA</span> <span className="text-white">VOL. 1</span>
           </h1>
           
-          <p className="text-xl sm:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto sm:text-xs text-center">
             🚀 Beats de Trap Premium Criados para Produtores Modernos<br />
             🎧 WAVs + STEMS | FLPs | Livre de Royalties | Qualidade Profissional
           </p>
