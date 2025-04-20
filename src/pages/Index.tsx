@@ -35,9 +35,7 @@ export default function Index() {
             <button onClick={handleDownloadNow} className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale">
               🔊 Baixar Agora
             </button>
-            <button className="px-8 py-4 rounded-md border-2 border-white border-opacity-20 hover:border-opacity-50 text-white font-bold text-lg button-glow hover-scale">
-              🎧 Ouvir Preview
-            </button>
+            
           </div>
         </div>
         
