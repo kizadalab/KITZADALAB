@@ -4,6 +4,7 @@ import { PricingCard } from "../components/PricingCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 import { TikTokIcon } from "../components/TikTokIcon";
 import { Instagram, ArrowDown } from "lucide-react";
+
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
   const handleDownloadNow = () => {
@@ -19,8 +20,11 @@ export default function Index() {
         {/* Logo and Title */}
         <div className="z-10 max-w-4xl">
           <div className="mb-6 flex justify-center">
-            <div className="font-bold text-4xl neon-text glow tracking-wider">
-          </div>
+            <img 
+              src="/lovable-uploads/a84f1deb-e824-4c04-8ab5-7213ed16a078.png" 
+              alt="KITZADALAB Logo" 
+              className="w-64 h-64 mb-4 animate-float"
+            />
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black mb-4 tracking-tight">
