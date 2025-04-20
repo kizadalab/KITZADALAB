@@ -4,16 +4,12 @@ import { PricingCard } from "../components/PricingCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 import { TikTokIcon } from "../components/TikTokIcon";
 import { Instagram, ArrowDown } from "lucide-react";
-
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
-
   const handleDownloadNow = () => {
     window.location.href = 'https://pay.cakto.com.br/35payx6_345747';
   };
-
-  return (
-    <div className="min-h-screen lab-gradient-bg text-white overflow-x-hidden">
+  return <div className="min-h-screen lab-gradient-bg text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
         <div className="absolute inset-0 bg-dark-navy opacity-90 z-0"></div>
@@ -23,7 +19,8 @@ export default function Index() {
         {/* Logo and Title */}
         <div className="z-10 max-w-4xl">
           <div className="mb-6 flex justify-center">
-            <div className="font-bold text-4xl neon-text glow tracking-wider">KITZADALAB</div>
+            <div className="font-bold text-4xl neon-text glow tracking-wider">
+          </div>
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black mb-4 tracking-tight">
@@ -36,10 +33,7 @@ export default function Index() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={handleDownloadNow}
-              className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale"
-            >
+            <button onClick={handleDownloadNow} className="px-8 py-4 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold text-lg button-glow hover-scale">
               🔊 Baixar Agora
             </button>
             <button className="px-8 py-4 rounded-md border-2 border-white border-opacity-20 hover:border-opacity-50 text-white font-bold text-lg button-glow hover-scale">
@@ -110,34 +104,19 @@ export default function Index() {
           
           <div className="mb-10">
             <div className="flex overflow-x-auto space-x-2 mb-6 pb-2">
-              <button 
-                className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 1 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`}
-                onClick={() => setActiveTab(1)}
-              >
+              <button className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 1 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`} onClick={() => setActiveTab(1)}>
                 Trap Anthem
               </button>
-              <button 
-                className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 2 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`}
-                onClick={() => setActiveTab(2)}
-              >
+              <button className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 2 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`} onClick={() => setActiveTab(2)}>
                 808 Cosmos
               </button>
-              <button 
-                className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 3 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`}
-                onClick={() => setActiveTab(3)}
-              >
+              <button className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 3 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`} onClick={() => setActiveTab(3)}>
                 Neon Drill
               </button>
-              <button 
-                className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 4 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`}
-                onClick={() => setActiveTab(4)}
-              >
+              <button className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 4 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`} onClick={() => setActiveTab(4)}>
                 Cybertrap
               </button>
-              <button 
-                className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 5 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`}
-                onClick={() => setActiveTab(5)}
-              >
+              <button className={`px-4 py-2 rounded-md whitespace-nowrap ${activeTab === 5 ? 'bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy' : 'text-white bg-white bg-opacity-10'}`} onClick={() => setActiveTab(5)}>
                 Lab Experiment
               </button>
             </div>
@@ -169,46 +148,11 @@ export default function Index() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <PricingCard 
-              title="Pacote Iniciante"
-              price="29"
-              features={[
-                "10 Beats em WAV",
-                "Licença Básica",
-                "Uso comercial limitado",
-                "Suporte por email"
-              ]}
-              ctaText="Começar Agora"
-            />
+            <PricingCard title="Pacote Iniciante" price="29" features={["10 Beats em WAV", "Licença Básica", "Uso comercial limitado", "Suporte por email"]} ctaText="Começar Agora" />
             
-            <PricingCard 
-              title="Pacote Criador"
-              price="59"
-              features={[
-                "Todos os 25 Beats em WAV",
-                "STEMS incluídos",
-                "Arquivos de Projeto FLP",
-                "Licença Pro",
-                "Uso comercial ilimitado",
-                "Suporte prioritário"
-              ]}
-              isPopular={true}
-              ctaText="Melhor Valor"
-            />
+            <PricingCard title="Pacote Criador" price="59" features={["Todos os 25 Beats em WAV", "STEMS incluídos", "Arquivos de Projeto FLP", "Licença Pro", "Uso comercial ilimitado", "Suporte prioritário"]} isPopular={true} ctaText="Melhor Valor" />
             
-            <PricingCard 
-              title="Kit Lab Ultimate"
-              price="99"
-              features={[
-                "Tudo do Pacote Criador",
-                "Atualizações vitalícias",
-                "Conteúdo bônus exclusivo",
-                "Consultoria 1-a-1 com produtor",
-                "Pedido de beat personalizado",
-                "Suporte VIP"
-              ]}
-              ctaText="Quero o Ultimate"
-            />
+            <PricingCard title="Kit Lab Ultimate" price="99" features={["Tudo do Pacote Criador", "Atualizações vitalícias", "Conteúdo bônus exclusivo", "Consultoria 1-a-1 com produtor", "Pedido de beat personalizado", "Suporte VIP"]} ctaText="Quero o Ultimate" />
           </div>
           
           <div className="mt-12 text-center">
@@ -233,20 +177,11 @@ export default function Index() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard 
-              quote="Os beats são diferentes. Minha faixa entrou em 3 playlists em uma semana."
-              author="@808VYBE"
-            />
+            <TestimonialCard quote="Os beats são diferentes. Minha faixa entrou em 3 playlists em uma semana." author="@808VYBE" />
             
-            <TestimonialCard 
-              quote="Melhor investimento que fiz como artista independente."
-              author="@RaeOnTheTrack"
-            />
+            <TestimonialCard quote="Melhor investimento que fiz como artista independente." author="@RaeOnTheTrack" />
             
-            <TestimonialCard 
-              quote="KITZADALAB entende o som atual. Tudo é pesado."
-              author="@YoungStatic"
-            />
+            <TestimonialCard quote="KITZADALAB entende o som atual. Tudo é pesado." author="@YoungStatic" />
           </div>
         </div>
       </section>
@@ -264,14 +199,12 @@ export default function Index() {
           </p>
           
           <div className="flex items-center justify-center gap-4 mb-10">
-            <a href="https://instagram.com/kitzadalab" target="_blank" rel="noopener noreferrer" 
-              className="flex items-center px-4 py-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-all">
+            <a href="https://instagram.com/kitzadalab" target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-all">
               <Instagram size={20} className="mr-2" />
               <span>@kitzadalab</span>
             </a>
             
-            <a href="https://tiktok.com/@kitzadalab" target="_blank" rel="noopener noreferrer"
-              className="flex items-center px-4 py-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-all">
+            <a href="https://tiktok.com/@kitzadalab" target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-all">
               <TikTokIcon size={20} className="mr-2" />
               <span>@kitzadalab</span>
             </a>
@@ -291,11 +224,7 @@ export default function Index() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-            <input 
-              type="email" 
-              placeholder="Seu endereço de email" 
-              className="flex-1 px-4 py-3 bg-white bg-opacity-10 rounded-md border border-white border-opacity-20 focus:outline-none focus:border-neon-blue"
-            />
+            <input type="email" placeholder="Seu endereço de email" className="flex-1 px-4 py-3 bg-white bg-opacity-10 rounded-md border border-white border-opacity-20 focus:outline-none focus:border-neon-blue" />
             <button className="px-6 py-3 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold">
               Inscrever
             </button>
@@ -323,24 +252,20 @@ export default function Index() {
             </div>
             
             <div className="flex items-center gap-4">
-              <a href="https://instagram.com/kitzadalab" target="_blank" rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-neon-blue transition-colors">
+              <a href="https://instagram.com/kitzadalab" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-blue transition-colors">
                 <Instagram size={20} />
               </a>
               
-              <a href="https://tiktok.com/@kitzadalab" target="_blank" rel="noopener noreferrer"
-                className="text-gray-400 hover:text-neon-blue transition-colors">
+              <a href="https://tiktok.com/@kitzadalab" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-blue transition-colors">
                 <TikTokIcon size={20} />
               </a>
               
-              <a href="https://www.kitzadalab.com" target="_blank" rel="noopener noreferrer"
-                className="text-gray-400 hover:text-neon-blue transition-colors">
+              <a href="https://www.kitzadalab.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-blue transition-colors">
                 www.kitzadalab.com
               </a>
             </div>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 }
