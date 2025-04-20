@@ -52,6 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// KITZADALAB custom colors
+				"neon-blue": "#00e0ff",
+				"lab-green": "#00ff99", 
+				"dark-navy": "#0a0f1c",
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
