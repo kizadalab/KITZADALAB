@@ -4,7 +4,6 @@ import { PricingCard } from "../components/PricingCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 import { TikTokIcon } from "../components/TikTokIcon";
 import { Instagram, ArrowDown } from "lucide-react";
-
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
   const handleDownloadNow = () => {
@@ -20,11 +19,7 @@ export default function Index() {
         {/* Logo and Title */}
         <div className="z-10 max-w-4xl">
           <div className="mb-6 flex justify-center">
-            <img 
-              src="/lovable-uploads/a84f1deb-e824-4c04-8ab5-7213ed16a078.png" 
-              alt="KITZADALAB Logo" 
-              className="w-64 h-64 mb-4 animate-float"
-            />
+            <img src="/lovable-uploads/a84f1deb-e824-4c04-8ab5-7213ed16a078.png" alt="KITZADALAB Logo" className="w-64 h-64 mb-4 animate-float" />
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black mb-4 tracking-tight">
@@ -62,13 +57,13 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">✅</div>
-              <h3 className="text-xl font-bold mb-2">25 Beats de Trap Profissionais</h3>
-              <p className="text-gray-400">Composições de alta qualidade prontas para seus vocais.</p>
+              <h3 className="text-xl font-bold mb-2">155 Beats de Trap Profissionais</h3>
+              <p className="text-gray-400">Faça produções de alta qualidade prontas para seus vocais.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">🎚️</div>
-              <h3 className="text-xl font-bold mb-2">WAVs + STEMS em Alta Qualidade</h3>
+              <h3 className="text-xl font-bold mb-2">WAVs em Alta Qualidade</h3>
               <p className="text-gray-400">Elementos individuais para personalização completa.</p>
             </div>
             
@@ -81,7 +76,7 @@ export default function Index() {
             <div className="glass-effect rounded-lg p-6 hover-scale">
               <div className="text-neon-blue text-2xl mb-4">🧪</div>
               <h3 className="text-xl font-bold mb-2">Projetos do FL Studio</h3>
-              <p className="text-gray-400">Arquivos FLP completos para personalizar cada aspecto.</p>
+              <p className="text-gray-400">Arquivos completos para personalizar cada aspecto.</p>
             </div>
             
             <div className="glass-effect rounded-lg p-6 hover-scale">
