@@ -4,11 +4,14 @@ import { PricingCard } from "../components/PricingCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 import { TikTokIcon } from "../components/TikTokIcon";
 import { Instagram, ArrowDown } from "lucide-react";
+import { NewsletterForm } from "../components/NewsletterForm";
+
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
   const handleDownloadNow = () => {
     window.location.href = 'https://pay.cakto.com.br/35payx6_345747';
   };
+
   return <div className="min-h-screen lab-gradient-bg text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
@@ -217,12 +220,7 @@ export default function Index() {
             👉 Entre na newsletter do LAB para drops exclusivos, samples e desafios de produção
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-            <input type="email" placeholder="Seu endereço de email" className="flex-1 px-4 py-3 bg-white bg-opacity-10 rounded-md border border-white border-opacity-20 focus:outline-none focus:border-neon-blue" />
-            <button className="px-6 py-3 rounded-md bg-gradient-to-r from-neon-blue to-lab-green text-dark-navy font-bold">
-              Inscrever
-            </button>
-          </div>
+          <NewsletterForm />
         </div>
       </section>
 
